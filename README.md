@@ -1,5 +1,6 @@
 # tic-tac-toe
 file structure
+```
 tic_tac_toe_web_ai/
 ├── app.py
 ├── leaderboard.json        # auto-created
@@ -8,3 +9,4 @@ tic_tac_toe_web_ai/
 └── static/
     ├── style.css
     └── script.js
+```
