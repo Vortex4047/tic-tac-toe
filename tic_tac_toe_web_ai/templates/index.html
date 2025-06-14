@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div>
+        <input type="text" id="playerX" placeholder="Enter Player X Name" />
+        <input type="text" id="playerO" placeholder="Enter Player O Name / AI" />
+        <label class="toggle">
+            <input type="checkbox" id="aiToggle"> Play vs AI
+        </label>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="scoreboard" id="scoreboard"></div>
+    <div id="board"></div>
+    <div id="message"></div>
+    <button onclick="resetGame()">Reset Game</button>
+
+    <h2>🏆 Leaderboard</h2>
+    <div class="leaderboard" id="leaderboard"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

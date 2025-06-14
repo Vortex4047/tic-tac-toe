@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('/static/bg-pattern.jpg') center/cover no-repeat fixed;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.scoreboard, .leaderboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ccc;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform 0.5s ease, background 0.3s;
+}
+
+.cell.played {
+    transform: perspective(600px) rotateY(180deg);
+    background: #80deea;
+    color: #000;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    font-size: 20px;
+    margin: 15px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.toggle {
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
